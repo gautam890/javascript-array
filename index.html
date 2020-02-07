@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+    body {
+        margin: 0;
+    }
+    .container {
+       width: 100%;
+    }
+    .container-body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+    .container-body section:first-child {
+        width: 30%;
+        flex: 1;
+    } 
+
+    .container-body section:last-child {
+        width: 70%;
+        display: flex;
+        flex: 1
+    }
+    
+    .container-body section:last-child div {
+        display: inline-block;
+        width: 50%;
+        border: 1px solid;
+        flex-direction: column;
+    }
+
+</style>
+<script src="index.js"></script> 
+</head>
+<body>
+    <div class="container">
+     <header style="background-color: 'green'; border: 1px solid"> i am header</header>
+     <div class="container-body">
+        <section> section 1</section>
+
+        <section>
+            <div> child 1 </div>
+            <div> child 2 </div>
+        </section>
+     </div>
+     
+    </div> 
+</body>
+</html>
